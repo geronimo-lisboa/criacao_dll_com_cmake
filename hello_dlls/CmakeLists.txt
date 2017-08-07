@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(mostrando-dlls)
+file(GLOB my_source_files "*.h" "*.cpp" "*.cxx")
+add_library(hello-dlls SHARED ${my_source_files} )  
+add_definitions(-DVERSAO_DLL)

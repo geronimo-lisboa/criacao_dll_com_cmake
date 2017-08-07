@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project(carregando-dll)
+file(GLOB my_source_files "*.h" "*.cpp" "*.cxx")
+add_executable(hello-dlls-cliente ${my_source_files} )  
+include_directories("C:/Nova pasta (2)/hello_dlls")
+target_link_libraries(hello-dlls-cliente "C:/Nova pasta (2)/hello_dlls_bin/Debug/hello-dlls.lib")
+add_definitions(-DVERSAO_CLIENTE)
